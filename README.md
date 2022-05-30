@@ -58,6 +58,8 @@ $ venom run --var="target_site=https://mysite.com" --var="logout_url=/logout" te
 
 Venom returns a code different from zero when a test fail or when you try an update and your version is the latest one. Therefore, to prevent your script to fail then add `|| true` at the end of your command.
 
+For Windows scripts, add `EXIT 0` an the end of your command.
+
 # Reporting
 
 This [section](https://github.com/ovh/venom#export-tests-report) of the venom documentation describes the different formats supported for the integration in a CI/CD platform.
